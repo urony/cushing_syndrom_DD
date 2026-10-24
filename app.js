@@ -179,7 +179,7 @@ function updateProgress() {
 }
 
 function imgBox(src, alt, dark) {
-  return `<img src="${src}" alt="${esc(alt)}" loading="lazy" class="max-w-full h-auto rounded-lg ${dark ? "object-contain" : "object-cover"} max-h-64"
+  return `<img src="${src}" alt="${esc(alt)}" loading="lazy" class="max-w-full h-auto rounded-lg ${dark ? "object-contain max-h-80" : "object-cover max-h-64"}"
     onerror="this.outerHTML='<div class=&quot;text-xs text-slate-400 py-10 text-center&quot;>התמונה בהכנה</div>'" />`;
 }
 
